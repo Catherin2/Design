@@ -11,44 +11,34 @@
     scroll-padding-top: 2rem;
     font-family: "Poppins", sans-serif;
 }
+section{
+  padding: 50px 10%;
+  }
+  body{
+     background: var(--bg-color);
+     color: var(--text-color);
+ }
+ *::selection{
+     color: var(--bg-color);
+     background: var(--main-color);
+     }
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 18x 10%;
+    transition: 0.2s;
 
-:root {
-  --primary-color: #ff9442;
-  --secondary-color: #0c0a5d;
-  --text-dark: #030712;
-  --text-light: #4b5563;
-  --extra-light: #f5f6f8;
-  --white: #ffffff;
-  --max-width: 1200px;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.section__container {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 5rem 1rem;
-}
-
-.section__subheader {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--primary-color);
-  text-align: center;
-}
-
-.section__header {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--secondary-color);
-  text-align: center;
-}
-
-
+ }
+ header.shadow{
+    box-shadow: 0 0 4px rgb(14 55 54/15%);
+ }
 .logo{
     font-size: 1.1rem;
     font-weight: 600;
@@ -56,20 +46,7 @@
     }
   .navbar{
       display: flex;
-   }
-  .nav__header {
-    padding: 0.75rem 1rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--primary-color);
-  }
 
-   .nav__menu__btn {
-     font-size: 1.5rem;
-     color: var(--white);
-     cursor: pointer;
    }
    .navbar a{
       font-size: 1rem;
@@ -80,25 +57,12 @@
    .navbar a:hover{
       color: #FFA500;
   }
-  .btn {
-    padding: 0.625rem 1.5rem;
-    outline: none;
-    border: none;
-    font-size: 1rem;
-    color: var(--white);
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    border-radius: 5rem;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-
-  .btn:hover {
-    color: var(--secondary-color);
-    background-color: transparent;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-  }
-
+  #menu-icon{
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 10001;
+      display: none;
+   }
  header {
    background-color: var(--extra-light);
  }
@@ -114,9 +78,7 @@
   max-width: 350px;
   margin-inline: auto;
   margin-top: 2rem;
-
 }
-
 .design {
   background-color: var(--extra-light);
 }
