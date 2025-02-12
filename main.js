@@ -15,4 +15,21 @@ window.addEventListener("scroll", () => {
 
     /*media query*/
 
+function handleMediaQueryChange(e) {
+      if (e.matches) {
+        // Code for mobile view
+        console.log('Mobile view');
+      } else {
+        // Code for desktop view
+        console.log('Desktop view');
+      }
+    }
+
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+    // Call the function once to handle the initial state
+    handleMediaQueryChange(mediaQuery);
+
+    // Add the listener for future changes
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
 
