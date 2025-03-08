@@ -1,1 +1,1 @@
-Cathreine's - Software Archtecture Designs and UI/UX design mockups.
+Catherine's - Software Architecture Designs and UI/UX design mockups.
